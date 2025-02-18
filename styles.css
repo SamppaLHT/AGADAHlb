@@ -133,15 +133,11 @@ tr:hover {
     display: inline-flex; /* Keeps it properly aligned with text */
     align-items: center;
     vertical-align: middle;
-    color: #d4af37;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.player-link:hover {
-    color: #b8891c;
-    text-decoration: underline;
-}
 
 
 
