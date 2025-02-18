@@ -1,40 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
     background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.leaderboard {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Baloo Thambi 2', sans-serif;
+    color: #ddd;
     text-align: center;
 }
-img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
+
+.leaderboard {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 60%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    top: -30px;
+}
+
+.date {
+    color: #fff;
+    font-size: 15px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    font-size: 22px;
 }
+
 th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    color: #fff;
+    font-size: 24;
 }
+
 th {
-    background-color: #f8f8f8;
+    background-color: #222;
+    font-size: 26;
 }
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.15);
 }
+
+.styled-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #f4c542;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #f4c542;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+
+.styled-button:hover {
+    background-color: #f4c542;
+    color: black;
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent; 
+    color: #5865F2;
+    border: 2px solid #5865F2;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 120px;
+    left: 740px;
+
+}
+
+.discord-button i {
+    font-size: 20px;
+}
+
+.discord-button:hover {
+    background-color: #5865F2;
+    color: black;
+}
+
+.video-link i {
+    color: white; /* Gold for active video links */
+    font-size: 18px;
+}
+
+.video-link:hover i {
+    color: #d4af37; /* Darker gold when hovered */
+}
+
+.video-missing i {
+    color: #888; /* Greyed out for missing videos */
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.player-link {
+    margin-left: 5px; /* Space between name and icon */
+    font-size: 20px;
+    display: inline-flex; /* Keeps it properly aligned with text */
+    align-items: center;
+    vertical-align: middle;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.player-link:hover {
+    color: #b8891c;
+    text-decoration: underline;
+}
+
+
+
+
+
+
