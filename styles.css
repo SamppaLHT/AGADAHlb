@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap');
 
 body {
-    background: url('images/background.jpg') no-repeat center center fixed;
+    background: url('images/cleanbgfilters.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Baloo Thambi 2', sans-serif;
     color: #ddd;
@@ -75,7 +75,7 @@ tr:hover {
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     position: absolute;
-    top: 120px;
+    top: 30px;
     left: 40px;
 }
 
@@ -98,7 +98,7 @@ tr:hover {
     text-decoration: none;
     transition: 0.3s ease-in-out;
     position: absolute;
-    top: 120px;
+    top: 30px;
     left: 740px;
 
 }
@@ -121,10 +121,28 @@ tr:hover {
     color: #d4af37;
 }
 
+.video-missing {
+    position: relative;
+    display: inline-block;
+}
+
 .video-missing i {
-    color: #888;
+    color: transparent; /* Makes the fill transparent */
     font-size: 18px;
     opacity: 0.5;
+    -webkit-text-stroke: 1px #888; /* Creates an outline effect */
+    position: relative;
+}
+
+.video-missing i::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the line */
+    background-color: #888; /* Match the icon outline */
+    transform: rotate(-45deg); /* Diagonal line */
 }
 
 .player-link {
@@ -136,6 +154,13 @@ tr:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 
